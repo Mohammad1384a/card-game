@@ -3,27 +3,33 @@ public class Card {
     private int value;
     private Player owner;
 
-    public Card(String name, int value){
-        this.name = name;
-        this.value = value;
+    // Constructor to initialize the card with a name and value.
+    public Card(String name, int value) {
+        this.name = name; // Assign the provided name to the card.
+        this.value = value; // Assign the provided value to the card.
     }
 
-    public void setOwner(Player owner){
-        this.owner = owner;
+    // Method to set the owner of the card.
+    public void setOwner(Player owner) {
+        this.owner = owner; // Assign the provided owner to the card.
     }
 
-    public String getName(){
-        return name;
+    // Method to get the name of the card.
+    public String getName() {
+        return name; // Return the name of the card.
     }
 
-    public Player getOwner(){
-        return owner;
+    // Method to get the owner of the card.
+    public Player getOwner() {
+        return owner; // Return the owner of the card
     }
 
-    public int getValue(){
-        return value;
+    // Method to get the value of the card.
+    public int getValue() {
+        return value; // Return the value of the card.
     }
 
+    // Override toString method to represent the card as a string.
     @Override
     public String toString() {
         return "Card{" +
